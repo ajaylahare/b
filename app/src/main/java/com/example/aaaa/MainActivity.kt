@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_TEXT,message)
             intent.type="text/plan"
             startActivity(Intent.createChooser(intent,"share to:"))
-            // HII I AM AJAY
+            // HII I AM AJAY KUMAR LAHARE
         }
     }
 }
