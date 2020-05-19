@@ -24,5 +24,13 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra("use",message)
                 startActivity(intent)
         }
+        button3.setOnClickListener {
+            val message: String=Text.text.toString()
+             val intent =Intent()
+            intent.action=Intent.ACTION_SEND
+            intent.putExtra(Intent.EXTRA_TEXT,message)
+            intent.type="text/plan"
+            startActivity(Intent.createChooser(intent,"share to:"))
+        }
     }
 }
