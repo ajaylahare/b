@@ -1,5 +1,6 @@
 package com.example.aaaa
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_TEXT,message)
             intent.type="text/plan"
             startActivity(Intent.createChooser(intent,"share to:"))
+            // HII
         }
     }
 }
